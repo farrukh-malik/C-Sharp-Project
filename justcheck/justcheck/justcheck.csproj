@@ -1,0 +1,226 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{28F6C450-D97B-46BE-93E0-170C8215344C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>justcheck</RootNamespace>
+    <AssemblyName>justcheck</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="accounts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="accounts.Designer.cs">
+      <DependentUpon>accounts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="accountSalery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="accountSalery.Designer.cs">
+      <DependentUpon>accountSalery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="daily record.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="daily record.Designer.cs">
+      <DependentUpon>daily record.cs</DependentUpon>
+    </Compile>
+    <Compile Include="final record.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="final record.Designer.cs">
+      <DependentUpon>final record.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HR.Designer.cs">
+      <DependentUpon>HR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hrDelete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hrDelete.Designer.cs">
+      <DependentUpon>hrDelete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hrSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hrSearch.Designer.cs">
+      <DependentUpon>hrSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hrView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hrView.Designer.cs">
+      <DependentUpon>hrView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="monthly record.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="monthly record.Designer.cs">
+      <DependentUpon>monthly record.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mydbDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>mydbDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="accounts.resx">
+      <DependentUpon>accounts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="accountSalery.resx">
+      <DependentUpon>accountSalery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="daily record.resx">
+      <DependentUpon>daily record.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="final record.resx">
+      <DependentUpon>final record.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HR.resx">
+      <DependentUpon>HR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hrDelete.resx">
+      <DependentUpon>hrDelete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hrSearch.resx">
+      <DependentUpon>hrSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hrView.resx">
+      <DependentUpon>hrView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="monthly record.resx">
+      <DependentUpon>monthly record.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="mydbDataSet.xsc">
+      <DependentUpon>mydbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="mydbDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>mydbDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="mydbDataSet.xss">
+      <DependentUpon>mydbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\preloader.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LOG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AllGamesHome.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cloudservice.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\twti.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\map-image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iphone_hand.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Backup-Seagate-icon-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Phone-HTC-Dash-icon-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3D-Eagle-icon-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="mydb.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
