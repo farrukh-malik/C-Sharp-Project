@@ -7,45 +7,44 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using System.Data.OleDb;
-
 namespace justcheck
 {
-    public partial class accountSalery : Form
+    public partial class TOTAL : Form
     {
         public OleDbConnection con = new OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\\mydb.accdb");
-        public accountSalery()
+        public TOTAL()
         {
             InitializeComponent();
         }
 
+        private void TOTAL_Load(object sender, EventArgs e)
+        {
+
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
-            int sel = 0, TEMP = 0,id;
-         //   try
-           // {
-                id =Int32.Parse( textBox3.Text);
+            double quant = 0,total=0;
+            try
+            {
                 con.Open();
                 OleDbDataReader dt = null;
-                OleDbCommand cmd = new OleDbCommand("Select * from hr where ID="+id+" ", con);
+                OleDbCommand cmd = new OleDbCommand("Select * from dl", con);
                 dt = cmd.ExecuteReader();
                 while (dt.Read())
                 {
-
-                    textBox6.Text = dt["Salary"].ToString();
-                    sel = Int32.Parse(textBox6.Text);
-                    TEMP = sel;
-                    textBox6.Text = TEMP.ToString();
-                    TEMP = 1;
+                    quant += double.Parse(dt["quan"].ToString());
+                    total += double.Parse(dt["amount"].ToString());
                 }
-                textBox3.Text = TEMP.ToString();
-
+                textBox1.Text = quant.ToString();
+                textBox2.Text = total.ToString();
                 con.Close();
-          //  }
+            }
 
-          //  catch (Exception ex)
-           // {
-           //     MessageBox.Show("not execute");
-           // }
+            catch (Exception ex)
+            {
+                MessageBox.Show("not execute");
+            }
         }
     }
 }

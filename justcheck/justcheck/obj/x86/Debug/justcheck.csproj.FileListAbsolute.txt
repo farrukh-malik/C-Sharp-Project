@@ -17,3 +17,23 @@ C:\Users\Farrukh Malik\Documents\Visual Studio 2010\Projects\justcheck\justcheck
 C:\Users\Farrukh Malik\Documents\Visual Studio 2010\Projects\justcheck\justcheck\obj\x86\Debug\justcheck.hrView.resources
 C:\Users\Farrukh Malik\Documents\Visual Studio 2010\Projects\justcheck\justcheck\obj\x86\Debug\justcheck.hrSearch.resources
 C:\Users\Farrukh Malik\Documents\Visual Studio 2010\Projects\justcheck\justcheck\obj\x86\Debug\justcheck.hrDelete.resources
+C:\Users\Farrukh Malik\Desktop\erp\justcheck\justcheck\bin\Debug\justcheck.exe.config
+C:\Users\Farrukh Malik\Desktop\erp\justcheck\justcheck\obj\x86\Debug\justcheck.exe
+C:\Users\Farrukh Malik\Desktop\erp\justcheck\justcheck\obj\x86\Debug\justcheck.pdb
+C:\Users\Farrukh Malik\Desktop\erp\justcheck\justcheck\bin\Debug\mydb.accdb
+C:\Users\Farrukh Malik\Desktop\erp\justcheck\justcheck\bin\Debug\justcheck.exe
+C:\Users\Farrukh Malik\Desktop\erp\justcheck\justcheck\bin\Debug\justcheck.pdb
+C:\Users\Farrukh Malik\Desktop\erp\justcheck\justcheck\obj\x86\Debug\justcheck.csprojResolveAssemblyReference.cache
+C:\Users\Farrukh Malik\Desktop\erp\justcheck\justcheck\obj\x86\Debug\justcheck.accounts.resources
+C:\Users\Farrukh Malik\Desktop\erp\justcheck\justcheck\obj\x86\Debug\justcheck.accountSalery.resources
+C:\Users\Farrukh Malik\Desktop\erp\justcheck\justcheck\obj\x86\Debug\justcheck.daily_record.resources
+C:\Users\Farrukh Malik\Desktop\erp\justcheck\justcheck\obj\x86\Debug\justcheck.final_record.resources
+C:\Users\Farrukh Malik\Desktop\erp\justcheck\justcheck\obj\x86\Debug\justcheck.Form1.resources
+C:\Users\Farrukh Malik\Desktop\erp\justcheck\justcheck\obj\x86\Debug\justcheck.HR.resources
+C:\Users\Farrukh Malik\Desktop\erp\justcheck\justcheck\obj\x86\Debug\justcheck.hrDelete.resources
+C:\Users\Farrukh Malik\Desktop\erp\justcheck\justcheck\obj\x86\Debug\justcheck.hrSearch.resources
+C:\Users\Farrukh Malik\Desktop\erp\justcheck\justcheck\obj\x86\Debug\justcheck.hrView.resources
+C:\Users\Farrukh Malik\Desktop\erp\justcheck\justcheck\obj\x86\Debug\justcheck.monthly_record.resources
+C:\Users\Farrukh Malik\Desktop\erp\justcheck\justcheck\obj\x86\Debug\justcheck.Properties.Resources.resources
+C:\Users\Farrukh Malik\Desktop\erp\justcheck\justcheck\obj\x86\Debug\justcheck.csproj.GenerateResource.Cache
+C:\Users\Farrukh Malik\Desktop\erp\justcheck\justcheck\obj\x86\Debug\justcheck.TOTAL.resources

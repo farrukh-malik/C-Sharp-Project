@@ -36,12 +36,10 @@
             this.button1 = new System.Windows.Forms.Button();
             this.rectangleShape1 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
             this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
-            this.rectangleShape4 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
             this.rectangleShape3 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
             this.rectangleShape2 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
@@ -107,7 +105,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(425, 39);
+            this.button1.Location = new System.Drawing.Point(498, 38);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 102);
             this.button1.TabIndex = 27;
@@ -119,7 +117,7 @@
             // 
             this.rectangleShape1.BorderColor = System.Drawing.Color.Coral;
             this.rectangleShape1.BorderWidth = 5;
-            this.rectangleShape1.Location = new System.Drawing.Point(423, 67);
+            this.rectangleShape1.Location = new System.Drawing.Point(494, 67);
             this.rectangleShape1.Name = "rectangleShape1";
             this.rectangleShape1.Size = new System.Drawing.Size(78, 132);
             // 
@@ -129,7 +127,6 @@
             this.shapeContainer1.Margin = new System.Windows.Forms.Padding(0);
             this.shapeContainer1.Name = "shapeContainer1";
             this.shapeContainer1.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
-            this.rectangleShape4,
             this.rectangleShape3,
             this.rectangleShape2,
             this.rectangleShape1});
@@ -137,19 +134,11 @@
             this.shapeContainer1.TabIndex = 28;
             this.shapeContainer1.TabStop = false;
             // 
-            // rectangleShape4
-            // 
-            this.rectangleShape4.BorderColor = System.Drawing.Color.Coral;
-            this.rectangleShape4.BorderWidth = 5;
-            this.rectangleShape4.Location = new System.Drawing.Point(692, 67);
-            this.rectangleShape4.Name = "rectangleShape4";
-            this.rectangleShape4.Size = new System.Drawing.Size(78, 132);
-            // 
             // rectangleShape3
             // 
             this.rectangleShape3.BorderColor = System.Drawing.Color.Coral;
             this.rectangleShape3.BorderWidth = 5;
-            this.rectangleShape3.Location = new System.Drawing.Point(284, 67);
+            this.rectangleShape3.Location = new System.Drawing.Point(355, 67);
             this.rectangleShape3.Name = "rectangleShape3";
             this.rectangleShape3.Size = new System.Drawing.Size(78, 132);
             // 
@@ -157,39 +146,29 @@
             // 
             this.rectangleShape2.BorderColor = System.Drawing.Color.Coral;
             this.rectangleShape2.BorderWidth = 5;
-            this.rectangleShape2.Location = new System.Drawing.Point(558, 68);
+            this.rectangleShape2.Location = new System.Drawing.Point(629, 68);
             this.rectangleShape2.Name = "rectangleShape2";
             this.rectangleShape2.Size = new System.Drawing.Size(78, 132);
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(560, 39);
+            this.button2.Location = new System.Drawing.Point(630, 38);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 102);
             this.button2.TabIndex = 27;
-            this.button2.Text = "MONTHLY REPORT";
+            this.button2.Text = "TOTAL ";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(286, 39);
+            this.button3.Location = new System.Drawing.Point(359, 38);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 102);
             this.button3.TabIndex = 27;
             this.button3.Text = "ALL EMPLOY SALERY DETAIL";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(694, 39);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 102);
-            this.button4.TabIndex = 29;
-            this.button4.Text = "FINAL REPORT";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // panel2
             // 
@@ -399,7 +378,6 @@
             this.ClientSize = new System.Drawing.Size(1012, 733);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -428,12 +406,10 @@
         private System.Windows.Forms.Button button1;
         private Microsoft.VisualBasic.PowerPacks.RectangleShape rectangleShape1;
         private Microsoft.VisualBasic.PowerPacks.ShapeContainer shapeContainer1;
-        private Microsoft.VisualBasic.PowerPacks.RectangleShape rectangleShape4;
         private Microsoft.VisualBasic.PowerPacks.RectangleShape rectangleShape3;
         private Microsoft.VisualBasic.PowerPacks.RectangleShape rectangleShape2;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.TextBox textBox6;
