@@ -53,8 +53,8 @@ namespace justcheck
         private void button4_Click(object sender, EventArgs e)
         {
             int sel = 0, TEMP = 0;
-        //    try
-     ///       {
+           try
+            {
 
                 conn.Open();
                 OleDbDataReader dt = null;
@@ -66,24 +66,20 @@ namespace justcheck
                     textBox41.Text = dt["amount"].ToString();
                     sel = Int32.Parse(textBox41.Text);
                     TEMP += sel;
-                    /// 
+                    
                     textBox41.Show();
                     textBox41.Text = TEMP.ToString();
                 }
 
 
                 conn.Close();
-         //   }
+           }
 
-        /*    catch (Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show("not execute");
-            }*/
-           // finally
-           // {
-
-                conn.Close();
-          //  }
+            }
+           
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -91,7 +87,12 @@ namespace justcheck
             textBox1.Clear();
             textBox2.Clear();
             textBox22.Clear();
-            textBox41.Clear()
+            textBox41.Clear();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

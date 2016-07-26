@@ -38,5 +38,10 @@ namespace justcheck
                 MessageBox.Show("Caan't Read");
             }
         }
+
+        private void hrView_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

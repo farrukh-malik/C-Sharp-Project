@@ -24,7 +24,7 @@ namespace justcheck
 
         private void button2_Click(object sender, EventArgs e)
         {
-            monthly_record obj = new monthly_record();
+            TOTAL obj = new TOTAL();
             obj.Show();
         }
 
@@ -38,6 +38,11 @@ namespace justcheck
         {
             accountSalery obj = new accountSalery();
             obj.Show();
+        }
+
+        private void accounts_Load(object sender, EventArgs e)
+        {
+
         }
 
        

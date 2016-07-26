@@ -29,20 +29,18 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.manager = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.hr = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.rectangleShape1 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.shapeContainer2 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
@@ -52,7 +50,6 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.con = new System.Data.OleDb.OleDbConnection();
             this.panel3.SuspendLayout();
-            this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -91,12 +88,13 @@
             this.manager.Enabled = false;
             this.manager.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.manager.ForeColor = System.Drawing.Color.DarkCyan;
-            this.manager.Location = new System.Drawing.Point(54, 125);
+            this.manager.Location = new System.Drawing.Point(54, 147);
             this.manager.Name = "manager";
-            this.manager.Size = new System.Drawing.Size(183, 36);
+            this.manager.Size = new System.Drawing.Size(183, 86);
             this.manager.TabIndex = 6;
             this.manager.Text = "MANAGER";
             this.manager.UseVisualStyleBackColor = false;
+            this.manager.Click += new System.EventHandler(this.manager_Click);
             // 
             // panel1
             // 
@@ -113,39 +111,13 @@
             this.hr.Enabled = false;
             this.hr.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.hr.ForeColor = System.Drawing.Color.DarkCyan;
-            this.hr.Location = new System.Drawing.Point(54, 376);
+            this.hr.Location = new System.Drawing.Point(54, 287);
             this.hr.Name = "hr";
-            this.hr.Size = new System.Drawing.Size(183, 36);
+            this.hr.Size = new System.Drawing.Size(183, 81);
             this.hr.TabIndex = 9;
             this.hr.Text = "HR DEPART";
             this.hr.UseVisualStyleBackColor = false;
             this.hr.Click += new System.EventHandler(this.hr_Click);
-            // 
-            // button5
-            // 
-            this.button5.BackColor = System.Drawing.Color.White;
-            this.button5.Enabled = false;
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.Color.DarkCyan;
-            this.button5.Location = new System.Drawing.Point(54, 293);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(183, 36);
-            this.button5.TabIndex = 8;
-            this.button5.Text = "VOLUNTEERS";
-            this.button5.UseVisualStyleBackColor = false;
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.White;
-            this.button4.Enabled = false;
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.DarkCyan;
-            this.button4.Location = new System.Drawing.Point(54, 209);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(183, 36);
-            this.button4.TabIndex = 7;
-            this.button4.Text = "RECEPTIONIST";
-            this.button4.UseVisualStyleBackColor = false;
             // 
             // button1
             // 
@@ -158,6 +130,7 @@
             this.button1.TabIndex = 13;
             this.button1.Text = "EXIT";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -194,24 +167,12 @@
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.panel5.BackgroundImage = global::justcheck.Properties.Resources.Phone_HTC_Dash_icon_2;
+            this.panel5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel5.BackgroundImage")));
             this.panel5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel5.Controls.Add(this.label3);
-            this.panel5.Location = new System.Drawing.Point(90, 6);
+            this.panel5.Location = new System.Drawing.Point(0, 0);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(220, 243);
+            this.panel5.Size = new System.Drawing.Size(395, 266);
             this.panel5.TabIndex = 0;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Wide Latin", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(-1, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(372, 24);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "FARRUKH MALIK";
             // 
             // panel4
             // 
@@ -235,6 +196,7 @@
             // 
             this.textBox3.Location = new System.Drawing.Point(144, 52);
             this.textBox3.Name = "textBox3";
+            this.textBox3.PasswordChar = '*';
             this.textBox3.Size = new System.Drawing.Size(239, 21);
             this.textBox3.TabIndex = 7;
             // 
@@ -264,9 +226,9 @@
             this.accounts.Enabled = false;
             this.accounts.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.accounts.ForeColor = System.Drawing.Color.DarkCyan;
-            this.accounts.Location = new System.Drawing.Point(54, 462);
+            this.accounts.Location = new System.Drawing.Point(54, 425);
             this.accounts.Name = "accounts";
-            this.accounts.Size = new System.Drawing.Size(183, 36);
+            this.accounts.Size = new System.Drawing.Size(183, 87);
             this.accounts.TabIndex = 18;
             this.accounts.Text = "ACCOUNTS DEPART";
             this.accounts.UseVisualStyleBackColor = false;
@@ -295,16 +257,12 @@
             this.Controls.Add(this.accounts);
             this.Controls.Add(this.hr);
             this.Controls.Add(this.panel4);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.manager);
             this.Controls.Add(this.panel1);
             this.Name = "Form1";
             this.Text = "Form1";
             this.panel3.ResumeLayout(false);
-            this.panel5.ResumeLayout(false);
-            this.panel5.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.ResumeLayout(false);
@@ -319,8 +277,6 @@
         private System.Windows.Forms.Button manager;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button hr;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private Microsoft.VisualBasic.PowerPacks.RectangleShape rectangleShape1;
@@ -333,7 +289,6 @@
         private System.Windows.Forms.Button accounts;
         private System.Windows.Forms.ProgressBar progressBar1;
         private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.Label label3;
         private System.Data.OleDb.OleDbConnection con;
     }
 }

@@ -20,29 +20,29 @@ namespace justcheck
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
         private void button2_Click(object sender, EventArgs e)
         {
-           
 
-            if (textBox1.Text == "accounts" && textBox3.Text == "123"){
-                     this.timer1.Start(); 
-                     accounts.Enabled = true;
-                }
 
-            else if (textBox1.Text == "reception" && textBox3.Text == "123"){
-                    this.timer1.Start();
-                    manager.Enabled = true;
-                }
-
-            else if (textBox1.Text == "volunteer" && textBox3.Text == "123"){
-                   this.timer1.Start();
-                   manager.Enabled = true;
-                }
-
-            else if (textBox1.Text == "hr" && textBox3.Text == "123"){
-                  this.timer1.Start();
-                  hr.Enabled = true;
+            if (textBox1.Text == "accounts" && textBox3.Text == "123")
+            {
+                this.timer1.Start();
+                accounts.Enabled = true;
             }
 
-            
+            else if (textBox1.Text == "manager" && textBox3.Text == "123")
+            {
+                this.timer1.Start();
+                manager.Enabled = true;
+            }
+
+
+
+            else if (textBox1.Text == "hr" && textBox3.Text == "123")
+            {
+                this.timer1.Start();
+                hr.Enabled = true;
+            }
+
+
         }
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -65,6 +65,17 @@ namespace justcheck
         {
             accounts obj = new accounts();
             obj.Show();
+        }
+
+        private void manager_Click(object sender, EventArgs e)
+        {
+            managers mg = new managers();
+            mg.Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
 
        

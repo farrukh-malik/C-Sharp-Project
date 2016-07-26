@@ -43,7 +43,7 @@ namespace justcheck
 
             catch (Exception ex)
             {
-                MessageBox.Show("not execute");
+                //MessageBox.Show("not execute");
             }
         }
     }
